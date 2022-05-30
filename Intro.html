@@ -1,0 +1,120 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+            font-family: 'East Sea Dokdo', cursive;
+        }
+    #btn_group button{
+        border: 0px;
+        background-color: transparent;
+        background-image: none !important;
+        text-align: center;
+        font-size : 30px;
+        color : black;
+        position : fixed;
+        top : 0%;
+        z-index: 1;
+    }
+    #btn_group :nth-child(1){
+        left: 0%;
+        width: 25%;
+        height: 50px;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+    #btn_group :nth-child(2){
+        left: 25%;
+        width: 25%;
+        height: 50px;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+    #btn_group :nth-child(3){
+        left: 50%;
+        width: 25%;
+        height: 50px;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+    #btn_group :nth-child(4){
+        left: 75%;
+        width: 26%;
+        height: 50px;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+    #btn_group button:hover{
+        background-color : white;
+        color : pink;
+        font-size: 35px;
+    }
+    .box01{
+        width: 100%;
+        height: 100vh; 
+        position: relative;
+    }
+    .box01::before{
+        content: "";
+        background: url(https://images.unsplash.com/photo-1540175496787-f3afe88ebc00?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1722);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.6;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+    }
+    .box01 h1{
+    color: rgb(0,0,0);
+    text-align: center;
+    top: 40%;  
+    position: relative;
+    font-size: 7em;
+    }
+    .box01 p{
+        color: rgb(0,0,0);
+        text-align: center;
+        top: 40%;
+        position: relative;
+        font-size: 35px;
+    }
+
+    </style>
+    <head>
+        <title>homepage</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+        <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+    </head>
+    <body>
+        <div class="box01">
+            <h1>
+                우리나라 소개
+            </h1>
+            <p>
+                202148019 컴퓨터공학과 안세훈
+            </p>
+        </div>
+        <div id = "btn_group">
+            <button type="button" onclick="location.href='mainBtn/main.html'">
+                메인
+            </button>
+            <button type="button" onclick="location.href='mainBtn/map.html'">
+                지도
+            </button>
+            <button type="button" onclick="location.href='mainBtn/info.html'">
+                출처
+            </button>
+            <button tpye="button" onclick="location.href='mainBtn/locations/서울.html'">
+                여행 떠나기
+            </button>
+        </div>
+    </body>
+</html>

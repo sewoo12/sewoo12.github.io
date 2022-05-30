@@ -1,0 +1,158 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+    * {
+        font-family: 'East Sea Dokdo', cursive;
+    }
+
+    #style1 {
+        position: relative;
+        width: 100%;
+        top: 120px;
+    }
+
+    #style1 h1 {
+        text-align: center;
+        position: relative;
+        font-size: 5em;
+    }
+
+    #style1 p {
+        text-align: center;
+        position: relative;
+        font-size: 25px;
+    }
+    #btn_next button{
+        border: 0px;
+        background-color: transparent;
+        background-image: none !important;
+        text-align: center;
+        font-size : 25px;
+        color : black;
+        position : absolute;
+        width: 25%;
+        height: 50px;
+        top : 0%;
+    }
+
+    #btn_next :nth-child(1) {
+        right: 0%;
+    }
+
+    #btn_next :nth-child(2) {
+        left: 0%;
+    }
+    
+    #btn_next button:hover {
+        color: pink;
+        font-size: 30px;
+    }
+    .text_group{
+        position: relative;
+        text-align: center;
+        top: 130px;
+        width: 100%;
+
+        white-space: nowrap;
+    }
+    .text_group button{
+        width: 100px;
+        border: 0px;
+        background-color: transparent;
+        background-image: none !important;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 30px;
+        font-size: 20px;
+        z-index: 3;
+    }
+    .text_group button:hover{
+        color: pink;
+    }
+    
+    
+</style>
+
+<head>
+
+    <title>
+        Gyeongii-go
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <style>
+        body {
+            background-color: aliceblue
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id = "mover"><img onclick="location.href='../../Intro.html'" src="../images/home.png"></div>
+    <img onclick="location.href='../map.html'" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Emblem_of_Gyeonggi_Province_%282021%29.svg/1600px-Emblem_of_Gyeonggi_Province_%282021%29.svg.png" alt="" style="position: absolute; width: 50px; left: 48%;height: 50px; top: 10px; z-index: 2">
+    <div id="style1">
+        <h1>
+            Welcome To Gyeongii-do
+        </h1>
+    </div>
+    
+    
+
+    <div id="btn_next">
+       <button type="button" onclick="location.href='#'">
+            다음지역으로 떠나기
+        </button>
+        <button type="button" onclick="location.href='서울.html'">
+            이전지역으로 돌아가기
+        </button>
+    </div>
+
+    <div style="text-align:center;width:100%">
+        <div class="text_group">
+            <button type="button" onclick="toggleImg('gyeongii-do','a');textChanged('수원화성','수원 화성 혹은 화성은 대한민국 경기도 수원시 팔달구 장안동에 있는 길이 5.52킬로미터의 성곽이다. <br>1963년 대한민국의 사적 제3호로 지정되었으며, 1997년 유네스코 세계문화유산으로 등록되었다.<br>화성은 한국 성의 구성 요소인 옹성, 성문, 암문, 산대, 체성, 치성, 적대, 포대, 봉수대 등을 모두 갖추어 대한민국의 성곽 건축 기술을 집대성했다고 평가된다.<br>지형에 맞추어 읍성과 산성의 구조가 모두 존재하도록 축조되었다.')">수원화성</button>
+            <button type="button" onclick="toggleImg('gyeongii-do','b');textChanged('한국민속촌','<b>한국민속촌</b>은 대한민국 경기도 용인시 기흥구 보라동 민속촌로 90에 위치한 테마파크이다. <br>한국의 민속적인 삶을 종합적으로 재현하고있는 사실적이고도 흥미로운 곳이다.<br>한국의 전통 문화를 보고 체험해 볼 수 있다.<br>한국인과 외국인 모두에게 유명한 관광지이다. <br>울창한 나무들과 맑은 시내가 굽이쳐 흐르는 아늑한 분지에 조선시대 500년의 생활상을 재현하였다.')">한국민속촌</button>
+            <button type="button" onclick="toggleImg('gyeongii-do','c');textChanged('남한산성북문','<b>남한산성</b>은 대한민국 경기도 광주시 남한산성면에 있는 남한산을 중심으로 하는 산성이며 경기도의 도립공원이다. <br>병자호란 때 조선의 16대 왕 인조가 <br>청나라에 대항한 곳으로 알려져 있으며,<br> 1950년대에 이승만 대통령에 의해 공원화된 후 현재 도립공원으로 지정되어 많은 시민들이 찾는 장소가 되었다. ')">남한산성북문</button>
+            <button type="button" onclick="toggleImg('gyeongii-do','d');textChanged('서울대공원','총 길이 10.84km, 유역면적 59.83㎢이다.<br> 서울 내의 모든 물이 여기에 모여 동쪽으로 흐르다가 왕십리 밖 살곶이다리(현 한양대학교 서울캠퍼스와 군자차량사업소 사이) 근처에서 중랑천과 합쳐 서쪽으로 흐름을 바꾸어 한강으로 빠진다.<br>전근대시기 자연하천에서 시작하여 여러 개천사업을 거쳐 직선화와 복개 작업이 이루어졌고,<br> 청계고가도로가 건설되었을 당시에는 아예 사라졌다가 이후 복원이 이루어져 자연하천과 인공하천이 혼합된 형태의 하천으로 재탄생되었다.')">서울대공원</button>        
+        </div>
+    </div>
+    
+    
+
+  
+
+
+    <div id="slideShow" style="top: 100px">
+        <hr>
+        <figure class="snip1273">
+            <figcaption>
+                <h3 id = "hh">수원화성</h3>
+                <p id = "pp">수원 화성 혹은 화성은 대한민국 경기도 수원시 팔달구 장안동에 있는 길이 5.52킬로미터의 성곽이다. <br>
+                    1963년 대한민국의 사적 제3호로 지정되었으며, 1997년 유네스코 세계문화유산으로 등록되었다.<br>
+                    화성은 한국 성의 구성 요소인 옹성, 성문, 암문, 산대, 체성, 치성, 적대, 포대, 봉수대 등을 모두 갖추어 대한민국의 성곽 건축 기술을 집대성했다고 평가된다.<br>
+                    지형에 맞추어 읍성과 산성의 구조가 모두 존재하도록 축조되었다.</p>
+              </figcaption>
+        <ul class="slides" style="top: 50px">
+            <li><img src="../images/gyeongii-do/a1.jpg" alt="" id = "img1"></li>
+            <li><img src="../images/gyeongii-do/a2.jpg" alt="" id = "img2"></li>
+            <li><img src="../images/gyeongii-do/a3.jpg" alt="" id = "img3"></li>
+            <li><img src="../images/gyeongii-do/a4.jpg" alt="" id = "img4"></li>
+        </ul>
+    </figure>
+    <p class="controller">
+      <span class="prev">&lang;</span>  
+      <span class="next">&rang;</span>
+    </p>
+  </div>
+
+
+
+    <script src="../js/javascripth.js"></script>
+
+
+</body></html>

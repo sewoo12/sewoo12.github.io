@@ -1,0 +1,162 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+    * {
+        font-family: 'East Sea Dokdo', cursive;
+    }
+
+    #style1 {
+        position: relative;
+        width: 100%;
+        top: 120px;
+    }
+
+    #style1 h1 {
+        text-align: center;
+        position: relative;
+        font-size: 5em;
+    }
+
+    #style1 p {
+        text-align: center;
+        position: relative;
+        font-size: 25px;
+    }
+    #btn_next button{
+        border: 0px;
+        background-color: transparent;
+        background-image: none !important;
+        text-align: center;
+        font-size : 25px;
+        color : black;
+        position : absolute;
+        width: 25%;
+        height: 50px;
+        top : 0%;
+    }
+
+    #btn_next :nth-child(1) {
+        right: 0%;
+    }
+
+    #btn_next :nth-child(2) {
+        left: 0%;
+    }
+    
+    #btn_next button:hover {
+        color: pink;
+        font-size: 30px;
+    }
+    .text_group{
+        position: relative;
+        text-align: center;
+        top: 130px;
+        width: 100%;
+
+        white-space: nowrap;
+    }
+    .text_group button{
+        width: 100px;
+        border: 0px;
+        background-color: transparent;
+        background-image: none !important;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 30px;
+        font-size: 20px;
+        z-index: 3;
+    }
+    .text_group button:hover{
+        color: pink;
+    }
+    
+    
+</style>
+
+<head>
+
+    <title>
+        seoul
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <style>
+        body {
+            background-color: aliceblue
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div id = "mover"><img onclick="location.href='../../Intro.html'" src="../images/home.png"></div>
+    
+    <img onclick="location.href='../map.html'" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Logo_of_Seoul%2C_South_Korea.svg/1200px-Logo_of_Seoul%2C_South_Korea.svg.png" alt="" style="position: absolute; width: 50px; left: 48%;height: 50px; top: 10px; z-index: 2">
+    <div id="style1">
+        <h1>
+            Welcome To Seoul
+        </h1>
+    </div>
+    
+    
+
+    <div id="btn_next">
+       <button type="button" onclick="location.href='경기도.html'">
+            다음지역으로 떠나기
+        </button>
+        <button type="button" onclick="location.href='../../Intro.html'">
+            메인으로 돌아가기
+        </button>
+    </div>
+
+    <div style="text-align:center;width:100%">
+        <div class="text_group">
+            <button type="button" onclick="toggleImg('seoul','a');textChanged('경복궁','경복궁은 조선 왕조 제일의 법궁이다. <br>왕도인 한양(서울) 도시 계획의 중심이기도 하다. <br>1395년 태조 이성계가 창건하였고,<br>1592년 임진 왜란으로 불타 없어졌다가, 고종 때인 1867년 중건 되었다. <br>흥선대원군이 주도한 중건 경복궁은 500여 동의 건물들이 미로같이 빼곡히 들어선 웅장한 모습 이었다.')">경복궁</button>
+            <button type="button" onclick="toggleImg('seoul','b');textChanged('N서울타워',' 1969년에 착공하여 1975년 7월 30일 완공되었다. <br>높이는 236.7m, 해발 479.7m이다. <br>수도권의 지상파 방송사들이 이 타워를 이용하여 전파를 송출한다. <br>전망대에서 서울 시내 전역을 내려다볼 수 있으며, <br>맑은 날씨에 찾는 관광지로 잘 알려져 있다.')">N서울타워</button>
+            <button type="button" onclick="toggleImg('seoul','c');textChanged('북촌한옥마을','서울특별시 종로구의 가회동과 삼청동 내에 위치한 한옥마을이다 <br>1990년대 이후 다세대가구 주택이 급속하게 들어서며 많은 수의 한옥이 사라졌지만, <br>현재까지 양호한 상태의 한옥이 군집을 이룬 채 일부 지역에 남아 있다<br>많은 사적과 문화재, 민속자료가 있어 도심 속의 박물관이라 불리기도 한다. ')">북촌한옥마을</button>
+            <button type="button" onclick="toggleImg('seoul','e');textChanged('청계천','총 길이 10.84km, 유역면적 59.83㎢이다.<br> 서울 내의 모든 물이 여기에 모여 동쪽으로 흐르다가 왕십리 밖 살곶이다리(현 한양대학교 서울캠퍼스와 군자차량사업소 사이) 근처에서 중랑천과 합쳐 서쪽으로 흐름을 바꾸어 한강으로 빠진다.<br>전근대시기 자연하천에서 시작하여 여러 개천사업을 거쳐 직선화와 복개 작업이 이루어졌고,<br> 청계고가도로가 건설되었을 당시에는 아예 사라졌다가 이후 복원이 이루어져 자연하천과 인공하천이 혼합된 형태의 하천으로 재탄생되었다.')">청계천</button>        
+        </div>
+    </div>
+    
+    
+
+  
+
+
+    <div id="slideShow" style="top: 100px">
+        <hr>
+        <figure class="snip1273">
+            <figcaption>
+                <h3 id = "hh">경복궁</h3>
+                <p id = "pp">경복궁은 조선 왕조 제일의 법궁이다. <br>
+                    왕도인 한양(서울) 도시 계획의 중심이기도 하다. <br>
+                    1395년 태조 이성계가 창건하였고,<br>
+                    1592년 임진 왜란으로 불타 없어졌다가, 고종 때인 1867년 중건 되었다. <br>
+                    흥선대원군이 주도한 중건 경복궁은 500여 동의 건물들이 미로같이 빼곡히 들어선 웅장한 모습 이었다.</p>
+              </figcaption>
+        <ul class="slides" style="top: 50px">
+            <li><img src="../images/seoul/a1.jpg" alt="" id = "img1"></li>
+            <li><img src="../images/seoul/a2.jpg" alt="" id = "img2"></li>
+            <li><img src="../images/seoul/a3.jpg" alt="" id = "img3"></li>
+            <li><img src="../images/seoul/a4.jpg" alt="" id = "img4"></li>
+        </ul>
+    </figure>
+    <p class="controller">
+      <span class="prev">&lang;</span>  
+      <span class="next">&rang;</span>
+    </p>
+  </div>
+
+
+
+    <script src="../js/javascripth.js"></script>
+    
+
+
+</body></html>
