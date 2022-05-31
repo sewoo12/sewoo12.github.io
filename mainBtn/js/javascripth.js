@@ -43,8 +43,7 @@ function toggleImg(text,ab) {
 function textChanged(text,text2){
   document.getElementById("hh").innerHTML = text;
   document.getElementById("pp").innerHTML = text2;
-  var imgChange = Object.keys(h);
-  alert(imgChange);
+  console.log(Object.keys(h))
 };
 
 
