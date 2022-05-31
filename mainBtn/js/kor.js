@@ -12,7 +12,7 @@ parcelRequire = function(e, r, t, n) {
                     return o(t, !0);
                 if (u && "string" == typeof t)
                     return u(t);
-                var c = new Error("Cannot find module '" + t + "'");
+                var c = new Error("Cann`ot find module '" + t + "'");
                 throw c.code = "MODULE_NOT_FOUND", c
             }
             p.resolve = function(r) {

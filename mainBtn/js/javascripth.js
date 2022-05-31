@@ -38,6 +38,7 @@ next.addEventListener('click', function () {
 
 function toggleImg(text,ab) {
   document.getElementById("img1").src = h.text;
+  document.getElementById("img1").src = "";
   document.getElementById("img2").src = "../images/"+text+"/"+ab+"2.jpg";
   document.getElementById("img3").src = "../images/"+text+"/"+ab+"3.jpg";
   document.getElementById("img4").src = "../images/"+text+"/"+ab+"4.jpg";
