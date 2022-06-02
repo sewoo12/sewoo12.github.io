@@ -43,9 +43,10 @@ function toggleImg(text,ab) {
 function textChanged(text,text2){
   document.getElementById("hh").innerHTML = text;
   document.getElementById("pp").innerHTML = text2;
-  for (i=0; i < 4; i++) {
-    document.getElementById("img"+i).src = h.text[i];
-  }
+  alert(h.text);
+  // for (i=0; i < 4; i++) {
+  //   document.getElementById("img1").src = h.text[i];
+  // }
 };
 
 
