@@ -47,15 +47,14 @@ $(".hover").mouseleave(
 
 
 function toggleImg(text,ab) {
+  document.getElementById('img1').src = "../images/"+text+"/"+ab+"1.jpg";
+  document.getElementById('img2').src = "../images/"+text+"/"+ab+"2.jpg";
+  document.getElementById('img3').src = "../images/"+text+"/"+ab+"3.jpg";
+  document.getElementById('img4').src = "../images/"+text+"/"+ab+"4.jpg";
   moveSlide(0);
 };
 
-function textChanged(text,ap,text2){
+function textChanged(text,text2){
   document.getElementById("hh").innerHTML = text;
   document.getElementById("pp").innerHTML = text2;
-  document.getElementById('img1').src = "../images/"+text+"/"+ap+"1.jpg";
-  document.getElementById('img2').src = "../images/"+text+"/"+ap+"2.jpg";
-  document.getElementById('img3').src = "../images/"+text+"/"+ap+"3.jpg";
-  document.getElementById('img4').src = "../images/"+text+"/"+ap+"4.jpg";
-    
 };
