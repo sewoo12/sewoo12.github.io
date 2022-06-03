@@ -1904,12 +1904,12 @@ parcelRequire = function(e, r, t, n) {
                 e.left && (a = r.x * e.left, l = r.y * e.top);
                 var n = e.text;
                 o.fillStyle = "white",
-                x && e.type === x.type ? (o.font = "normal 20px gothic", t = {
+                x && e.type === x.type ? (o.font = "normal bold 20px gothic", t = {
                     x: r.x,
                     y: r.y,
                     text: e.text,
                     hoverPos: e.hoverPos
-                }, o.globalAlpha = 1) : (o.font = "normal 20px gothic", o.globalAlpha = y),
+                }, o.globalAlpha = 1) : (o.font = "normal bold 20px gothic", o.globalAlpha = y),
                 o.fillText(n, r.x - o.measureText(n).width / 2 + a, r.y + l),
                 o.closePath(),
                 o.restore()
@@ -1964,12 +1964,12 @@ parcelRequire = function(e, r, t, n) {
                 e.left && (a = r.x * e.left, l = r.y * e.top);
                 var n = e.text;
                 o.fillStyle = "white",
-                x && e.type === x.type ? (o.font = "normal 25px gothic", t = {
+                x && e.type === x.type ? (o.font = "normal bold 25px gothic", t = {
                     x: r.x,
                     y: r.y,
                     text: e.text,
                     hoverPos: e.hoverPos
-                }, o.globalAlpha = 1) : (o.font = "normal 25px gothic", o.globalAlpha = y),
+                }, o.globalAlpha = 1) : (o.font = "normal bold 25px gothic", o.globalAlpha = y),
                 o.fillText(n, r.x - o.measureText(n).width / 2 + a, r.y + l),
                 o.closePath(),
                 o.restore()
