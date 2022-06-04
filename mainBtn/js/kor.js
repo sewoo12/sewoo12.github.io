@@ -1922,7 +1922,7 @@ parcelRequire = function(e, r, t, n) {
                     s = .1,
                     c = h - t.x,
                     d = i - t.y,
-                    v = (t.text + "\n 클릭하면 이동합니다.").split("\n"),
+                    v = (t.text + "\n 클릭하면 이동합니다...").split("\n"),
                     p = setInterval(function() {
                         if (a.clearRect(0, 0, e.width, e.height), a.save(), a.beginPath(), a.lineWidth = 2, a.moveTo(t.x, t.y), a.lineTo(t.x + c * s, t.y + d * s), a.strokeStyle = "white", a.stroke(), a.closePath(), a.restore(), (s += .05) > 1.05) {
                             var x = 0;
