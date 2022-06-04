@@ -3,6 +3,7 @@
 }
 #mover {
     position: fixed;
+    z-index: 3;
     bottom: 30px;
     right: 30px;
 }
