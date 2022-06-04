@@ -34,16 +34,19 @@ next.addEventListener('click', function () {
   }
   else if (currentIdx === slideCount-1){
     moveSlide(0);
-    slideCount = 0;
   }
 });
 
 
-$(".hover").mouseleave(
-  function () {
-    $(this).removeClass("hover");
-  }
-);
+// $(".hover").mouseleave(
+//   function () {
+//     $(this).removeClass("hover");
+//   }
+// );
+
+// 서울 이미지 저작권 : https://www.google.com/travel/things-to-do?g2lb=2502548,2503771,2503781,4258168,4270442,4284970,4291517,4306835,4429192,4597339,4649665,4722900,4723331,4733969,4741665,4757164,4758493,4762561,4778035,4779392,4786153,4786958,4790639,4791207&hl=ko-KR&gl=kr&ssta=1&dest_mid=/m/0hsqf&dest_state_type=main&dest_src=ts&q=서울+관광지&sa=X&ved=2ahUKEwiGsbnD7JD4AhVKmFYBHXbBDCsQuL0BegQIDRA4
+// 경기도 이미지 저작권 : 
+
 
 
 function toggleImg(text,ab) {
