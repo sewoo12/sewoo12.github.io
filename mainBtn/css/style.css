@@ -14,9 +14,6 @@
     animation-iteration-count: infinite;
   }
   #scroll a:visited { color:black; }
-
-  
-
   @keyframes scroll1 {
     0% {
       top: 80%;
