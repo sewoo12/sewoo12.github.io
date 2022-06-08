@@ -15,3 +15,35 @@
     width: 50px;height: 50px;
 }
 
+
+.imgBoxDiv{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    
+  }
+  .imgDiv{
+    width: 500px;
+    height: 400px;
+    background: white;
+    position: absolute;
+    z-index:1;
+    -webkit-transition:all .5s ease;
+    transition: all .5s ease;
+    bottom:0px;
+    overflow: hidden;
+   }
+   .imgBoxDiv:hover .imgDiv{
+     bottom: 50%;
+   }
+   .imgDescDiv{
+    width: 100%;
+    height: 50px;
+    padding:10px;
+    color:#FFFFFF;
+    background: #F2CB61;
+    position: absolute;
+    bottom: -100px;
+  }
