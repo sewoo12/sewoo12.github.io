@@ -1,44 +1,13 @@
-<!DOCTYPE HTML>
-<head>
-  <title></title>
-  <style>
-    .imgBoxDiv{
-      width: 300px;
-      height: 300px;
-      position: relative;
-      cursor: pointer;
-      overflow: hidden;
-      box-shadow: 2px 2px 8px 0px #000;
-    }
-    .imgDiv{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background: lightblue;
-      z-index:1;
-      -webkit-transition:all .5s ease;
-      transition: all .5s ease;
-      bottom:0px;
-      overflow: hidden;
-     }
-     .imgBoxDiv:hover .imgDiv{
-       bottom: 60px;
-     }
-     .imgDescDiv{
-      width: 100%;
-      height: 50px;
-      padding:10px;
-      color:#FFFFFF;
-      background: #F2CB61;
-      position: absolute;
-      bottom:0px;
-    }
-  </style>
-</head>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
 <body>
- <div class="imgBoxDiv">
-      <div class="imgDiv"><img src="../images/seoul/a1.jpg"></div>
-      <div class="imgDescDiv">이것은 사과 입니다.<div>
-  </div>
+    <py-script>
+        print('Hello world')
+        for i in range(10):
+            print(i)
+    </py-script>
 </body>
 </html>
