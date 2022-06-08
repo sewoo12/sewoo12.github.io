@@ -36,14 +36,23 @@
                 font-size : 25px;
                 color : pink;
             }
+            #container{
+	            height:5000px;
+            }
         </style>
     </head>
     <body>
-        <h1 style="top: 100px;">
+        <div id = "container">
+            <div id = "load" style="position: fixed;font-size: 30px;right: 20px;top:20px;transform: rotate(90deg);">
+              <i class="fa-solid fa-plane"></i> 
+            </div>
+        </div>
+        <div style="position: absolute;top: 10px;text-align: center;width:100%">
+        <h1>
             <i class="fa-solid fa-plane"></i> 제 홈페이지를 소개합니다 ! <i class="fa-solid fa-plane"></i>
         </h1>
         <hr>
-        <div id = "mover"><img onclick="location.href='../index.html'" src="images/home.png"></div>
+        <div><button type="button" id = "options" class="fa-solid fa-circle-xmark" style="border: none;background-color:white;transform: rotate(45deg)"></button></div>
         <div style="width: 500px; height: 500px;display: table-cell; vertical-align: middle;">
             <h2>
                 소개
@@ -55,9 +64,22 @@
 
             </p>
         </div>
-        <div style="width: 10px; height: 10000px; background-color: black;">
-
-        </div>
+    </div>
     </body>
-    <script src="js/scrooo.js"></script>
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(window).scroll(function () {
+                    var height = $(document).scrollTop();
+                    setDivHeight(height);
+            });
+
+
+        function setDivHeight(hi){
+            var objSet = document.getElementById("load");
+            var objTarHeight = document.getElementById("container").offsetHeight;
+            objSet.style.top = hi/((objTarHeight-window.innerHeight) /100) + "%";
+            }
+
+    </script>
 </html>
