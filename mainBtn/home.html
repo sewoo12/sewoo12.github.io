@@ -42,6 +42,7 @@
         </style>
     </head>
     <body>
+        <a name = "top1"></a>
         <div id = "container">
             <div id = "load" style="position: fixed;font-size: 30px;right: 20px;top:20px;transform: rotate(90deg);">
               <i class="fa-solid fa-plane"></i> 
@@ -52,7 +53,13 @@
             <i class="fa-solid fa-plane"></i> 제 홈페이지를 소개합니다 ! <i class="fa-solid fa-plane"></i>
         </h1>
         <hr>
-        <div><button type="button" id = "options" class="fa-solid fa-circle-xmark" style="border: none;background-color:white;transform: rotate(45deg)"></button></div>
+        <div id="mover">
+            <button type="button" id = "menu-open-close0" onclick="menu_open();" class="fa-solid fa-circle-xmark" style="border: none;background-color:white;transform: rotate(45deg)"></button>
+            <a href="#buttom1" id = "menu-open-close1" class="fa-solid fa-circle-up" style="border: none;background-color:white;transform: rotate(180deg)"></a>
+            <button type="button" id = "menu-open-close2" onclick="location.href='../index.html'" class="fa-solid fa-house-chimney-window" style="border: none;background-color:white;"></button>
+            <a href="#top1" id = "menu-open-close3" class="fa-solid fa-circle-up" style="border: none;background-color:white;"></a>
+            
+        </div>
         <div style="width: 500px; height: 500px;display: table-cell; vertical-align: middle;">
             <h2>
                 소개
@@ -64,11 +71,14 @@
 
             </p>
         </div>
+        
     </div>
+    <a name="buttom1"></a>
     </body>
     
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script>
+        
         $(window).scroll(function () {
                     var height = $(document).scrollTop();
                     setDivHeight(height);
@@ -81,5 +91,25 @@
             objSet.style.top = hi/((objTarHeight-window.innerHeight) /100) + "%";
             }
 
+            // $(function(){
+            // var angle = 0;        
+            // $('#menu-open-close0').click(function() { angle += -45; $("#menu-open-close0").rotate(angle);});
+            // });
+            
+
+        function menu_open(){
+            if (document.getElementById("menu-open-close0").style.transform == "rotate(45deg)"){
+                document.getElementById("menu-open-close0").style.transform = "rotate(90deg)";
+                document.getElementById("menu-open-close1").style.opacity = 1;
+                document.getElementById("menu-open-close2").style.opacity = 1;
+                document.getElementById("menu-open-close3").style.opacity = 1;
+            }
+            else{
+                document.getElementById("menu-open-close0").style.transform = "rotate(45deg)";
+                document.getElementById("menu-open-close1").style.opacity = 0;
+                document.getElementById("menu-open-close2").style.opacity = 0;
+                document.getElementById("menu-open-close3").style.opacity = 0;
+            }
+        }
     </script>
 </html>

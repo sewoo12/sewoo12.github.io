@@ -16,32 +16,19 @@
 	text-align:center;
 	line-height:50px;
 }
+#imageani{
+  width: 300px;
+  height: 300px;
+  position:absolute;
+}
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 <body>
-  <div id = "container">
-    <div id = "load" style="position: fixed;font-size: 30px;right: 20px">
-      <i class="fa-solid fa-plane"></i> 
-    </div>
-  </div>
+  
   
   
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script>
-  $(window).scroll(function () {
-			var height = $(document).scrollTop();
-			setDivHeight(height);
-	});
-
-
-  function setDivHeight(hi){
-     var objSet = document.getElementById("load");
-     var objTarHeight = document.getElementById("container").offsetHeight;
-     objSet.style.top = hi/((objTarHeight-window.innerHeight) /100) + "%";
-    }
-
-</script>
 
 </html>

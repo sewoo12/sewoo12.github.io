@@ -4,11 +4,14 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+  a {
+    color: black;
+    text-decoration-line: none;
+  }
   #scroll a{
     color: black;
     text-decoration-line: none;
-
+    
     animation-name: scroll1;
     animation-duration: 1s;
     animation-iteration-count: infinite;
