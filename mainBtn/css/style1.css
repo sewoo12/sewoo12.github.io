@@ -6,8 +6,8 @@
     z-index: 4;
     height: 130px;
     font-size: 30px;
-    bottom: 5vh;
-    right: 5vh;
+    bottom: 30px;
+    right: 57px;
 }
 
 #mover :nth-child(1){
@@ -22,7 +22,7 @@
 }
 
 #mover :nth-child(3){
-    font-size: 30px;
+    font-size: 27px;
     bottom: 85px;
     position: absolute;
     opacity: 0;
