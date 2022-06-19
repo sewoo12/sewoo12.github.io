@@ -1,34 +1,133 @@
 <html>
   <head>
     <style>
-      #container{
-	height:5000px;
-}
+    #nav-1 {
+    position: fixed;
+    top: 1%;
+    z-index: 2;
+    border: none;
+    border-radius: 10em;
+    display: flex;
+    list-style: none;
+    background: #ffffff;
+    box-shadow: 20px 20px 20px #00000033;
+    padding: 10px;
+    animation: fadeInDown 1.5s;
+  }
+  #nav-1 li {
+    margin: 0px;
+  }
+  #nav-1 li a {
+    position: relative;
+    padding: 0.6em 2em;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: #333;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 3;
+    white-space:nowrap;
+  }
 
-    #log{
-	position:fixed;
-	top:0;
-	left:0;
-	width:100px;
-	height:50px;
-	background-color:rgba(0,0,0,0.7);
-	color:white;
-	text-align:center;
-	line-height:50px;
-}
-#imageani{
-  width: 300px;
-  height: 300px;
-  position:absolute;
-}
+
+
+
+  #nav-1 .slide1,
+  #nav-1 .slide2 {
+    position: absolute;
+    display: inline-block;
+    height: 3em;
+    border-radius: 10em;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+  }
+  .slide1 {
+    position: absolute;
+    left: 1%;
+    width: 20%;
+    height: 70%;
+  }
+  #home:hover .slide1{
+    left: 1%;
+    width: 20%;
+    height: 70%;
+  }
+  #about:hover .slide1{
+    left: 10%;
+  }
+  #nav-1 .slide1 {
+    background-color: rgb(85, 179, 255);
+    z-index: 2;
+  }
+  #nav-1 .slide2 {
+    opacity: 0;
+    background: #ddd;
+    z-index: 1;
+  }
+  #nav-1 .squeeze {
+    transform: scale(0.9);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f8fa;
+    line-height: 1.5;
+  }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 <body>
-  
+  <ul id="nav-1" !important> 
+    <li class="slide1"></li>      
+    <li class="slide2"></li>
+    <li><a id="home" href="#">Home</a></li>
+    <li><a id="about" href="#">About Iceland</a></li>
+    <li><a id="made" href="#/">Made in Iceland</a></li>
+    <li><a id="travel" href="#/">About travel</a></li>
+  </ul>
+    
   
   
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-
+  <script>
+    $("#nav-1 a").on("click", function() {
+    var position = $(this)
+      .parent().position();
+    var width = $(this)
+      .parent().width();
+    $("#nav-1 .slide1").css({ opacity: 1, left: +position.left, width: width });
+  });
+  
+  $("#nav-1 a").on("mouseover", function() {
+    var position = $(this)
+      .parent().position();
+    var width = $(this)
+      .parent().width();
+    $("#nav-1 .slide2").css({ 
+      opacity: 1, left: +position.left, width: width })
+      .addClass("squeeze");
+  });
+  
+  $("#nav-1 a").on("mouseout", function() {
+    $("#nav-1 .slide2").css({ opacity: 0 }).removeClass("squeeze");
+  });
+  
+  var currentWidth = $("#nav-1")
+    .find("li:nth-of-type(4) a")
+    .parent("li")
+    .width();
+  var current = $("li:nth-of-type(4) a").position();
+  $("#nav-1 .slide1").css({ left: +current.left, width: currentWidth });
+  </script>
 </html>

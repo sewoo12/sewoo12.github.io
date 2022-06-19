@@ -36,7 +36,7 @@
                 color : pink;
             }
             #container{
-	            height:5000px;
+	            height:2000px;
             }
             .sa {
         opacity: 0;
@@ -49,13 +49,14 @@
         opacity: 1;
         transform: none;
       }
+      .gotoSeoul:hover {
+          color: pink;
+          font-size : 60px;
+      }
         </style>
     </head>
     <body>
         
-        <div style="position: absolute;padding: 10px;">
-            <button type="button" onclick= "DarkMode()" class = "fa-solid fa-lightbulb" style="border:none;background-color:white"></button>
-        </div>
         <a name = "top1"></a>
         <div id = "container">
             <div id = "load" style="position: fixed;font-size: 30px;right: 20px;top:20px;transform: rotate(90deg);">
@@ -72,12 +73,42 @@
                 <button type="button" id = "menu-open-close2" onclick="location.href='../index.html'" class="fa-solid fa-house-chimney-window" style="border: none;background-color:white;"></button>
                 <a href="#top1" id = "menu-open-close3" class="fa-solid fa-circle-up" style="border: none;background-color:white;"></a>     
             </div>
+            <div style="position: relative;top: 100px;left: 5vh;width: 90%; height:500px;">
+                <div class="sa sa-up" style="width: 100%; font-size: 50px">안녕하세요 <br>제 홈페이지는 전국 관광지를 소개하는 홈페이지 입니다. <br>
+                각 지역마다 관광지를 4개씩 소개합니다. <br>
+                슬라이드를 활용하여 사진들을 구경해보세요.</div>
+            </div>
+            <div style="position: absolute; width: 100%;text-align: center;top: 600px;">
+                <img class="sa sa-up" src="images/seoul/a1.jpg" style="width: 300px;height: 200px;position: relative">
+                <img class="sa sa-up" src="images/seoul/b1.jpg" style="width: 300px;height: 200px;position: relative">
+                <img class="sa sa-up" src="images/seoul/c1.jpg" style="width: 300px;height: 200px;position: relative">
+                <img class="sa sa-up" src="images/seoul/d1.jpg" style="width: 300px;height: 200px;position: relative">
+
+
+                <br>
+
+                <p class="sa sa-up">순서대로가 아닌 원하는 지역으로 바로 이동하고 싶다면 <br>
+                    해당 웹에 있는 지역 아이콘을 클릭하여 보세요! <br>
+                </p>
+                <a class="sa sa-up" href="../mainBtn/map.html"><img src="../mainBtn/images/clickicon.jpg" alt="" style="width: 100px; height: 100px;position: relative;top: 20px;"></a>
+                <br><br>
+                <p class="sa sa-up">
+                    이제 전국여행을 떠나봅시다.
+                    </p>
+            </div>
             
-            <div style="position: relative;top: 5vh;left: 5vh;width: 100%; height:500px;">
-                <div class="sa sa-up" style="width: 100%; font-size: 50px">안녕하세요 <br>제 홈페이지는 전국 관광지를 소개하는 홈페이지 입니다.</div>
+            <div style="text-align:center;width:100%;position:absolute;top: 900px;" class="sa sa-up">
+                
             </div>
 
-        
+            <div style="text-align:center;width:100%;position:absolute;top: 1200px;" class="sa sa-up">
+                   
+            </div>
+
+            <div style="text-align:center;width:100%;position:absolute;top: 1500px;" class="sa sa-up">
+                <button class="gotoSeoul" type="button" onclick="location.href='locations/서울.html'" style="width: 60%;height: 100px;background-color: white; border: 2px solid black; border-radius: 2%;">여행 떠나기 -></button>
+         </div>
+
         </div>
     <a name="buttom1"></a>
     </body>
@@ -107,11 +138,7 @@
       window.addEventListener('load', saFunc);
       window.addEventListener('scroll', saFunc);
 
-    function DarkMode(){
-        var hi098123_style = document.createElement('style');
-        hi098123_style.innerHTML="*{color: white; background-color: black;}";
-        document.head.appendChild(hi098123_style);
-    }
+
 
         function setDivHeight(hi){
             var objSet = document.getElementById("load");
